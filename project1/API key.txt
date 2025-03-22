@@ -1,0 +1,3 @@
+6e4a79cc5a5801c8726909e92ce91139 - open whether
+
+https://api.openweathermap.org/data/2.5/weather?q={germany}&appid={6e4a79cc5a5801c8726909e92ce91139}
