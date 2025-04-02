@@ -1,9 +1,0 @@
-        if(audioRef.current) {
-            audioRef.current.pause();
-            setPlayStatus(false)
-        }
-
-                if(audioRef.current) {
-            audioRef.current.pause();
-            setPlayStatus(false)
-        }
