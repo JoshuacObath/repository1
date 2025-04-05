@@ -1,0 +1,29 @@
+ create database hotel_db;
+use hotel_db;
+ CREATE TABLE reservations(
+  -> reservation_id INT AUTO_INCREMENT PRIMARY KEY,                                        
+  -> guest_name VARCHAR(255) NOT NULL,
+  -> room_number INT NOT NULL,
+  -> contact_number VARCHAR(10) NOT NULL,
+  -> reservation_data TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  -> );
+
+ALTER TABLE reservations RENAME COLUMN reservation_data TO reservation_date;
+
+Main menu:
+1. New reservation
+2. Check reservation
+3. Get room number
+4. Update reservation
+5. Delete Reservation
+0. Exit
+
+Functions:
+1. reserveRoom(Connection, Scanner): void => create new reservation in the table
+2. viewReservation(Connection): void => prints all reserved rooms
+3. getRoomnumber(Connection): void => prints room number of a person
+4. updateReservation(Connection, Scanner): void => updates the reservations table
+5. deleteReservation(Cinnection, id:Scanner): void => deletes an entry in the table with the specified id
+
+Statement.executeUpdate() returns an integer (number of rows) for insert, update, delete
+Statement.executeQuery() returns data from database for SELECT;
